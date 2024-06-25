@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="books.ico">
+        <script src="script.js" defer></script>
+        <title>Library</title>
+    </head>
+    <body>
+        <div id="header">
+            <div id="heading">
+                <img src="books.png" alt="booksIcon">
+                Library
+            </div>
+            <div id="addBookSection">
+                Add Book
+                <button class="addBookBtn"><img src="plus-solid-white.svg" alt="addBook"></button>
+            </div>
+        </div>
+        <div id="main">
+            <div id="addBookCard">
+                <div id="addText">Add Book</div>
+                <button class="addBookBtn"><img src="plus-solid-white.svg" alt="addBook"></button>
+            </div>
+        </div>
+        <dialog id="dialog">
+            <form method="dialog">
+                <label>Add Book Details</label>
+
+                <div>
+                    <label>Title</label>
+                    <input type="text" id="titleFld" required />
+                </div>
+
+                <div>
+                    <label>Author</label>
+                    <input type="text" id="authorFld" required />
+                </div>
+
+                <div>
+                    <label>Pages</label>
+                    <input type="number" id="pageFld" min="5" max="5000" required />
+                </div>
+                
+                <div>
+                    <label for="readFld">Have you read this book?</label>
+                    <input type="checkbox" id="readFld" name="readFld" value="hasRead"/>
+                </div>
+                
+                <div>
+                    <input type="submit" id="confirmBtn" value="Add">
+                    <input type="submit" id="cancelBtn" value="Cancel">
+                </div>
+            </form>
+        </dialog>      
+    </body>
+</html>
